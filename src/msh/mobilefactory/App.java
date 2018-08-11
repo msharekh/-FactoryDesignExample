@@ -6,10 +6,16 @@ public class App {
 		// TODO Auto-generated method stub
 		System.out.println("start");
 		//Samsung object
-//		Samsung samsung = new Samsung(2000, 2, 8);
-		Mobile samsung = MobileFactory.createMobile("SAMSUNG");
+		//Samsung samsung = new Samsung(2000, 2, 8);
 		
-		System.out.println("mobile model: "+samsung);
+		MobileFactory mf=new MobileFactory();
+		
+		Mobile samsung = mf.createMobile(Mobile.SAMSUNG);
+		
+		System.out.println("mobile model: "+samsung.getModel());
+		
+		System.out.println("end");
+
 	}
 
 }

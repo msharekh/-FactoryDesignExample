@@ -27,6 +27,5 @@ public class Samsung implements Mobile{
 	public void setModel(int model) {
 		this.model = model;
 	}
-	
-	
+	 
 }
